@@ -1,27 +1,37 @@
 import logo from './logo.svg';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Badge, Navbar, Container, Nav } from 'react-bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import NavbarComponent from "./components/Navbar";
+import CardComponent from './components/Card';
+import OffCanvComponent from './components/OffCanv';
+import BodyComponent from './components/Bdy';
+
+
 
 function App() {
   return (
-    <div>
-     
-    <Navbar collapseOnSelect expand="lg" bg='dark' variant='dark' fixed='top'>
-    <Container>
-      <Navbar.Brand href='#home'>Ukázka</Navbar.Brand>
-      <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
-      <Navbar.Collapse id="responsive-navbar-nav">
-      <Nav className='me-auto'>
-      <Nav.Link href='#home'>11111</Nav.Link>
-      <Nav.Link href='#home'>22222</Nav.Link>
-      </Nav>
-      </Navbar.Collapse>
-    </Container>
-    </Navbar>
-
+   
+    <div id='oum' style={{ }}>
+      <div id='home'>
+     <h1 style={{marginTop: "6rem", marginLeft: "50rem"}}>Vítejte</h1>
+    <NavbarComponent/>
+    <CardComponent/>
+    <OffCanvComponent/>
+    <CardComponent/>
+    </div> 
+    <div id='body'>
+    <BodyComponent/>
     </div>
-  
+    
+      
+   
+   
+    
 
+
+   
+  
+    </div>
 
   );
 }
