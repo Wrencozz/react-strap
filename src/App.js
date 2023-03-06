@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import NavbarComponent from "./components/Navbar";
@@ -11,10 +11,10 @@ import BodyComponent from './components/Bdy';
 function App() {
   return (
    
-    <div id='oum' style={{ }}>
+    <div>
       <div id='home'>
-     <h1 style={{marginTop: "6rem", marginLeft: "50rem"}}>Vítejte</h1>
-    <NavbarComponent/>
+      <NavbarComponent/>
+      <h1 style={{marginTop: "6rem", marginLeft: "50rem"}}>Vítejte</h1>
     <CardComponent/>
     <OffCanvComponent/>
     <CardComponent/>
